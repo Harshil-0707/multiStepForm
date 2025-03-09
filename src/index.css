@@ -3,3 +3,19 @@
 * {
     outline: none;
 }
+
+.animate {
+    @apply animate-[slideFromBottom_2s_ease_forwards];
+}
+
+@keyframes slideFromBottom {
+    0% {
+        opacity: 0%;
+        transform: translateY(5%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0%);
+    }
+}

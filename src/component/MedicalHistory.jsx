@@ -1,3 +1,4 @@
+import Wraper from "./Wraper";
 import Heading from "./Heading";
 import TextArea from "./TextArea";
 import DropDown from "./DropDown";
@@ -10,7 +11,7 @@ export default function MedicalHistory() {
     { htmlFor: "High Cholesterol" },
   ];
   return (
-    <div className="mb-5 text-left flex flex-col">
+    <Wraper>
       <Heading text={"Medical History"} />
       <CheckBox labelText={"Known Medical Conditions"} checkBox={checkBox} />
       <DropDown labelContent={"Family History of Heart Disease"} />
@@ -18,6 +19,6 @@ export default function MedicalHistory() {
         content={"Current Medications"}
         htmlFor={"CurrentMedications"}
       />
-    </div>
+    </Wraper>
   );
 }

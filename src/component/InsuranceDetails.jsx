@@ -1,10 +1,11 @@
-import InputField from "./InputField";
+import Wraper from "./Wraper";
 import Heading from "./Heading";
+import InputField from "./InputField";
 
 export default function InsuranceDetails() {
   return (
     <>
-      <div className="mb-5 text-left flex flex-col">
+      <Wraper>
         <Heading text={"Insurance Details"} />
         <InputField
           id="InsuranceProvider"
@@ -12,7 +13,7 @@ export default function InsuranceDetails() {
           labelText="Insurance Provider"
         />
         <InputField id="PolicyNumber" type="text" labelText="Policy Number" />
-      </div>
+      </Wraper>
     </>
   );
 }
